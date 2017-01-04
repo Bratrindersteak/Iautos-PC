@@ -1,0 +1,28 @@
+//public gradient function.
+@mixin normalGradient($type, $direction, $startColor, $endColor) {
+  background-image: -moz-#{$type}-gradient($direction, #{$startColor}, #{$endColor});// for Firefox.
+  background-image: -webkit-#{$type}-gradient($direction,#{$startColor}, #{$endColor});// for new chrome.
+  
+  @if $direction == top {
+   background-image: -webkit-gradient(#{$type}, $direction, bottom, from(#{$startColor}), to(#{$endColor}));// for old chrome.
+  } @else if $direction == left {
+    background-image: -webkit-gradient(#{$type}, $direction, right, from(#{$startColor}), to(#{$endColor}));// for old chrome.
+  }
+  
+  background-image: -o-#{$type}-gradient($direction, #{$startColor}, #{$endColor});// for opera.
+  background-image: -ms-#{$type}-gradient($direction, #{$startColor}, #{$endColor});// IE 10+.
+  
+  @if $type == linear {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$startColor}, endColorstr=#{$endColor});// IE 9-.
+  } @else if $type == radial {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#{$startColor}, endColorstr=#{$endColor});// IE 9-.
+  }
+}
+
+.submit input {
+  @include normalGradient(linear, top, #fff, #000);
+}
+
+.opacity-alpha {
+  @include normalGradient(linear, top, 'rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)');
+}

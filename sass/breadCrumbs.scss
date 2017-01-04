@@ -1,0 +1,21 @@
+.bread-crumbs {
+	height: 52px;
+	line-height: 52px;
+	font-size: 0;
+	@extend %iautos-width;
+
+	.item {
+		@extend %font-twelve;
+		@extend %color808080;
+	}
+
+	.split {
+		margin: 0 6px;
+		@extend %font-twelve;
+		@extend %color808080;
+	}
+
+	a {
+		@extend %a-hover;
+	}
+}

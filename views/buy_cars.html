@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>主站PC买车页</title>
+	<base target="_blank" />
+	<link rel="stylesheet" type="text/css" href="../dist/styles/iautos-pc.css" />
+	<script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../dist/scripts/header-9598c51a13.js"></script>
+	<script type="text/javascript" src="../dist/scripts/buy-car-c6bde61169.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r]||function() {
+				(i[r].q=i[r].q||[]).push(arguments)
+			},i[r].l = 1 * new Date();
+			a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-15007416-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<!-- common header start -->
+	<div id="commonHeader" class="common-header">
+		<div class="top-nav-wrapper">
+			<div class="top-nav clear">
+				<div class="personal-publish"><a href="/sell/fast_sendcar/">个人快速发车</a></div>
+				<div id="merchantRegister" class="merchant-register">
+					<h6 class="item"><span>我是商户</span></h6>
+					<ul id="merchantUnregisterList" class="list" style="display: none">
+						<li class="link">
+							<a href="javascript:void(0)">登录</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">免费注册</a>
+						</li>
+					</ul>
+					<ul id="merchantRegisterList" class="list" style="display: none">
+						<li class="link">
+							<a href="javascript:void(0)">发布车源</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">车源管理</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">车源推荐</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">店铺资料</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">退出</a>
+						</li>
+					</ul>
+				</div>
+				<div id="personalRegister" class="personal-register">
+					<h6 class="item"><span>个人登录</span></h6>
+					<ul id="personalUnregisterList" class="list" style="display: none">
+						<li class="link">
+							<a href="javascript:void(0)">登录</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">免费注册</a>
+						</li>
+					</ul>
+					<ul id="personalRegisterList" class="list" style="display: none">
+						<li class="link">
+							<a href="javascript:void(0)">发布车源</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">我的车源</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">我的收藏</a>
+						</li>
+						<li class="link">
+							<a href="javascript:void(0)">退出</a>
+						</li>
+					</ul>
+				</div>
+				<div id="clientDownload" class="client-download">
+					<h6 class="item"><span>客户端下载</span></h6>
+					<ul class="box clear" style="display: none">
+						<li>
+							<div class="image"><img src="/static2013/images/iautos-app-download.png" width="100%" /></div>
+							<h6 class="name">扫码下载</h6>
+							<p class="text">第一车网APP</p>
+						</li>
+						<li style="margin-left: 1px">
+							<div class="image"><img src="/static2013/images/haoche.jpg" width="100%" /></div>
+							<h6 class="name">了解更多</h6>
+							<p class="text">关注微信公众号</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- common header end -->
+
+	<!-- buy car start -->
+	<div id="buyCars" class="buy-cars clear">
+		<div class="selected-box clear">
+			<h6 class="name">已经选择:</h6>
+			<div class="item-box clear">
+				<a class="item" href="">北京</a>
+				<a class="reset-all" href="">重置条件</a>
+			</div>
+		</div>
+		<div class="buy-cars-main">
+			<div class="filter-box">
+				<div class="brand-bar bar clear">
+					<h6 class="name"></h6>
+					<ul class="default-brands clear">
+						<li class="brand-logo1 active"><a href="">丰田</a></li>
+						<li class="brand-logo82"><a href="">丰田</a></li>
+						<li class="brand-logo161"><a href="">丰田</a></li>
+					</ul>
+					<span class="multi-select-enter">多选</span>
+					<span class="more-choices">更多</span>
+					<div class="multi list clear" style="display: none">
+						<ul class="letter-list clear">
+							<li class="active">A</li>
+							<li>B</li>
+							<li>C</li>
+							<li>D</li>
+							<li>F</li>
+							<li>G</li>
+							<li>H</li>
+						</ul>
+						<ul class="brand-list clear">
+							<li class="brand-logo1 active">
+								<a href="" class="title">大众</a>
+							</li>
+							<li class="brand-logo2">
+								<a href="" class="title">大众</a>
+							</li>
+							<li class="brand-logo3">
+								<a href="" class="title">大众</a>
+							</li>
+						</ul>
+						<div class="selected-brands clear" style="display: none">
+							<span class="title">已选条件</span>
+							<span class="option">大众</span>
+							<span class="option">大众</span>
+						</div>
+						<div class="multi-select-submit" style="display: none">
+							<input class="confirm" type="button" value="选好了" />
+							<input class="cancel" type="button" value="取消" />
+						</div>
+					</div>
+				</div>
+				<div class="series-bar bar clear">
+					<h6 class="name"></h6>
+					<div class="item-box">
+						<a class="item active" href="">帕萨特</a>
+						<a class="item" href="">帕萨特</a>
+					</div>
+					<span class="multi-select-enter">多选</span>
+					<span class="more-choices">更多</span>
+					<div class="multi list clear" style="display: none">
+						<ul class="series-box">
+							<li class="clear">
+								<h6 class="title">一汽大众</h6>
+								<div class="items">
+									<a href="" class="selected">高尔夫</a>
+									<a href="">桑塔纳3000</a>
+								</div>
+							</li>
+							<li class="clear">
+								<h6 class="title">一汽大众</h6>
+								<div class="items">
+									<a href="">高尔夫</a>
+									<a href="">桑塔纳3000</a>
+								</div>
+							</li>
+						</ul>
+						<div class="multi-select-submit" style="display: none">
+							<input class="confirm" type="button" value="选好了" />
+							<input class="cancel" type="button" value="取消" />
+						</div>
+					</div>
+				</div>
+				<div class="price-bar bar clear">
+					<h6 class="name">价格</h6>
+					<div class="item-box">
+						<a class="item" href="">3万以下</a>
+						<a class="item active" href="">3-5万</a>
+						<a class="item" href="">5-8万</a>
+						<a class="item" href="">8-12万</a>
+						<a class="item" href="">12-15万</a>
+						<a class="item" href="">15-20万</a>
+						<a class="item" href="">20-25万</a>
+						<a class="item" href="">25-35万</a>
+						<a class="item" href="">35-50万</a>
+					</div>
+					<div class="input-box">
+						<input id="leftPriceText" type="text" maxlength="4" />
+						<i class="split">-</i>
+						<input id="rightPriceText" type="text" maxlength="4" />
+						<span class="unit">万</span>
+						<input id="searchPriceButton" type="button" value="确定" />
+					</div>
+				</div>
+				<div class="others-bar bar clear">
+					<h6 class="name">其他</h6>
+					<div class="select-box vehicle-age">
+						<h6 class="title">车龄</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">不限</a>
+								<a class="item" href="">1年以内</a>
+								<a class="item" href="">1-3年</a>
+								<a class="item" href="">3-5年</a>
+								<a class="item" href="">5-8年</a>
+								<a class="item" href="">8-10年</a>
+								<a class="item" href="">10年以上</a>
+							</div>
+							<div class="input-box">
+								<input id="leftYearText" type="text" maxlength="2" />
+								<i class="split">-</i>
+								<input id="rightYearText" type="text" maxlength="2" />
+								<span class="unit">年</span>
+								<input id="searchYearButton" type="button" value="确定" />
+							</div>
+						</div>
+					</div>
+					<div class="select-box mileage">
+						<h6 class="title">里程</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">1万公里内</a>
+								<a class="item" href="">3万公里内</a>
+								<a class="item" href="">6万公里内</a>
+								<a class="item" href="">10万公里内</a>
+							</div>
+						</div>
+					</div>
+					<div class="select-box car-type">
+						<h6 class="title">类型</h6>
+						<div class="multi list clear" style="display: block">
+							<ul class="multi-box clear">
+								<li class="selected"><a href="">微型车</a></li>
+								<li><a href="">小型车</a></li>
+								<li><a href="">紧凑型车</a></li>
+								<li><a href="">中型车</a></li>
+								<li><a href="">中大型车</a></li>
+								<li><a href="">豪华车</a></li>
+								<li><a href="">MPV</a></li>
+								<li><a href="">跑车</a></li>
+								<li><a href="">皮卡</a></li>
+								<li><a href="">微面</a></li>
+							</ul>
+							<div class="suv-box clear">
+								<h6 class="suv part-selected"><a href="">SUV</a></h6>
+								<ul class="suv-list clear">
+									<li class="selected"><a href="">小型SUV</a></li>
+									<li><a href="">紧凑型SUV</a></li>
+									<li><a href="">中型SUV</a></li>
+									<li><a href="">中大型SUV</a></li>
+									<li><a href="">全尺寸SUV</a></li>
+								</ul>
+							</div>
+							<span class="multi-select-enter">多选</span>
+							<div class="multi-select-submit" style="display: none">
+								<input class="confirm" type="button" value="选好了" />
+								<input class="cancel" type="button" value="取消" />
+							</div>
+						</div>
+					</div>
+					<div class="select-box gearbox">
+						<h6 class="title">变速箱</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">手自一体</a>
+								<a class="item" href="">手动档</a>
+								<a class="item" href="">自动档</a>
+							</div>
+						</div>
+					</div>
+					<div class="select-box emission">
+						<h6 class="title">排量</h6>
+						<div class="list multi clear" style="display: none">
+							<ul class="multi-box clear">
+								<li class="selected"><a href="">1.0L以下</a></li>
+								<li><a href="">1.1-1.4L</a></li>
+								<li><a href="">1.5-1.8L</a></li>
+								<li><a href="">1.9-2.3L</a></li>
+								<li><a href="">2.4-2.8L</a></li>
+								<li><a href="">2.9-3.5L</a></li>
+								<li><a href="">3.6-4.0L</a></li>
+							</ul>
+							<span class="multi-select-enter">多选</span>
+							<div class="multi-select-submit" style="display: none">
+								<input class="confirm" type="button" value="选好了" />
+								<input class="cancel" type="button" value="取消" />
+							</div>
+						</div>
+					</div>
+					<div class="select-box emission-standard">
+						<h6 class="title">排放</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">欧VI</a>
+								<a class="item" href="">京V</a>
+								<a class="item" href="">国V</a>
+								<a class="item" href="">国IV</a>
+								<a class="item" href="">国III</a>
+								<a class="item" href="">国II及以下</a>
+								<a class="item" href="">其它排放</a>
+							</div>
+						</div>
+					</div>
+					<div class="select-box fuel">
+						<h6 class="title">燃料</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">汽油</a>
+								<a class="item" href="">柴油</a>
+								<a class="item" href="">油电混合</a>
+								<a class="item" href="">纯电动</a>
+								<a class="item" href="">油气混合</a>
+								<a class="item" href="">其它</a>
+							</div>
+						</div>
+					</div>
+					<div class="select-box color">
+						<h6 class="title">颜色</h6>
+						<ul class="color-box list clear" style="display: none">
+							<li class="black active"><a href="">黑</a></li>
+							<li class="silver"><a href="">银</a></li>
+							<li class="white"><a href="">白</a></li>
+							<li class="red"><a href="">红</a></li>
+							<li class="blue"><a href="">蓝</a></li>
+							<li class="gold"><a href="">金</a></li>
+							<li class="green"><a href="">绿</a></li>
+							<li class="brown"><a href="">棕</a></li>
+							<li class="purple"><a href="">紫</a></li>
+							<li class="orange"><a href="">橙</a></li>
+							<li class="grey"><a href="">灰</a></li>
+							<li class="yellow"><a href="">黄</a></li>
+							<li class="others"><a href="">它</a></li>
+						</ul>
+					</div>
+					<div class="select-box bodywork">
+						<h6 class="title">车身</h6>
+						<div class="list clear" style="display: none">
+							<div class="item-box">
+								<a class="item" href="">三厢</a>
+								<a class="item" href="">两厢</a>
+								<a class="item" href="">旅行版</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="nav-list clear">
+				<li class="active"><a href="">全部</a></li>
+				<li><a href="">99好车</a></li>
+				<li><a href="">个人车源</a></li>
+				<li><a href="">商户车源</a></li>
+				<li><a href="">品牌认证</a></li>
+			</ul>
+			<div class="sort-box clear">
+				<div class="tag">
+					<a href="javascript:vold(0)">默认排序</a>
+					<a href="javascript:vold(0)">车龄</a>
+					<a href="javascript:vold(0)">价格</a>
+					<a href="javascript:vold(0)">里程</a>
+					<a href="javascript:vold(0)">最新</a>
+				</div>
+				<ul class="radio clear">
+					<li><a href="javascript:vold(0)"><input id="quasiNewCarRadio" type="radio" name="radio" /><label for="quasiNewCarRadio">准新车</label></a></li>
+					<li><a href="javascript:vold(0)"><input id="lessMileageRadio" type="radio" name="radio" /><label for="lessMileageRadio">里程少</label></a></li>
+					<li><a href="javascript:vold(0)"><input id="lowPriceRadio" type="radio" name="radio" /><label for="lowPriceRadio">低价</label></a></li>
+					<li><a href="javascript:vold(0)"><input id="markDownRadio" type="radio" name="radio" /><label for="markDownRadio">降价</label></a></li>
+				</ul>
+				<div class="mode"><a class="pic-form active" href="javascript:vold(0)"></a><a class="list-form" href="javascript:vold(0)"></a></div>
+				<div class="sum">共<i class="num">41505</i>条车源</div>
+			</div>
+			<ul class="car-pic-form-box car-box-list clear">
+				<li>
+					<a href="">
+						<div class="collect"><span>收藏</span></div>
+						<div class="image"><img src="../future_images/car-3d18883c36.png" width="100%" /></div>
+						<h6 class="name">现代索纳塔  2.0L 自动 DLX豪华 版</h6>
+						<div class="parameter">
+							<span>2012年7月</span>
+							<i class="split">/</i>
+							<span>2.88万公里</span>
+							<i class="split">/</i>
+							<span>北京</span>
+						</div>
+						<div class="price"><i class="symbol">￥</i><strong class="num">10.18</strong><i class="unit">万</i></div>
+						<div class="tags">
+							<span class="tag quasi-new-car">准新车</span>
+							<span class="tag less-mileage">里程少</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="collect"><span>收藏</span></div>
+						<div class="image"><img src="../future_images/car-3d18883c36.png" width="100%" /></div>
+						<h6 class="name">现代索纳塔  2.0L 自动 DLX豪华 版</h6>
+						<div class="parameter">
+							<span>2012年7月</span>
+							<i class="split">/</i>
+							<span>2.88万公里</span>
+							<i class="split">/</i>
+							<span>北京</span>
+						</div>
+						<div class="price"><i class="symbol">￥</i><strong class="num">10.18</strong><i class="unit">万</i></div>
+						<div class="tags">
+							<span class="tag low-price">低价</span>
+							<span class="tag mark-down">降价</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+					<div class="collect"><span>收藏</span></div>
+						<div class="image"><img src="../future_images/car-3d18883c36.png" width="100%" /></div>
+						<h6 class="name">现代索纳塔  2.0L 自动 DLX豪华 版</h6>
+						<div class="parameter">
+							<span>2012年7月</span>
+							<i class="split">/</i>
+							<span>2.88万公里</span>
+							<i class="split">/</i>
+							<span>北京</span>
+						</div>
+						<div class="price"><i class="symbol">￥</i><strong class="num">10.18</strong><i class="unit">万</i></div>
+						<div class="tags">
+							<span class="tag brand-certification">品牌认证</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="car-list-form-list car-box-list" style="display: block">
+				<li class="clear">
+					<a href="" class="image"><img src="../future_images/car-3d18883c36.png" width="100%" /></a>
+					<div class="info">
+						<h6 class="name"><a href="">现代索纳塔  2.0L 自动 DLX豪华版</a></h6>
+						<div class="parameter">
+							<span>2012年7月</span>
+							<span>2.88万公里</span>
+							<span>国V排放</span>
+							<span>自动</span>
+							<span>北京</span>
+						</div>
+						<div class="tags">
+							<span class="tag quasi-new-car">准新车</span>
+							<span class="tag less-mileage">里程少</span>
+							<span class="tag low-price">低价</span>
+							<span class="tag mark-down">降价</span>
+							<span class="tag brand-certification">品牌认证</span>
+						</div>
+					</div>
+					<div class="price">
+						<div class="going-price">
+							<i class="symbol">￥</i><strong class="num">10.18</strong><i class="unit">万</i>
+						</div>
+						<div class="new-car-price">
+							<span class="text">新车价：</span><span class="equation"><i>25.58</i>+<i>2.85</i>(税)=<i>31.55</i>万</span>
+						</div>
+						<div class="collect"><span>收藏</span></div>
+					</div>
+				</li>
+			</ul>
+
+			<!-- pages box start -->
+			<div class="pages-box">
+				<a onclick="return false" class="change-page" href="javascript:void(0)">上一页</a>
+				<a class="page-num" href="javascript:void(0)">1</a>
+				<a class="page-num" href="javascript:void(0)">2</a>
+				<a class="page-num" href="javascript:void(0)">3</a>
+				<a class="page-num active" href="javascript:void(0)">4</a>
+				<a class="page-num" href="javascript:void(0)">5</a>
+				<span class="point"><i></i><i></i><i></i></span>
+				<a class="page-num" href="javascript:void(0)">100</a>
+				<a class="change-page disabled" href="javascript:void(0)">下一页</a>
+				<span class="left-tips tips">支持键盘</span>
+				<span class="right-tips tips">翻页</span>
+			</div>
+			<!-- pages box end -->
+			
+			<div class="hot-link-box link-box">
+				<div class="title clear"><h6><span class="keyword">北京二手车</span>相关热门信息介绍</h6></div>
+				<p class="intro">第一车网为您提供<span class="keyword">北京二手车</span>价格查询，涵盖<span class="keyword">北京二手车</span>报价、图片、电话、地址、经销商、点评、资讯及<span class="keyword">北京二手车交易市场</span>的海量信息。让您卖的合算，买的放心，买卖二手车就上第一车网。</p>
+				<div class="list clear">
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="friendly-link-box link-box">
+				<div class="title clear"><h6>友情链接</h6></div>
+				<div class="list clear">
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+					<ul>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+						<li class="link"><a href="">北京二手迷你</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="buy-cars-side">
+			<div class="reservation-box side-box">
+				<div class="form">
+					<h6 class="title">预约 售车 置换</h6>
+					<p class="description">预约1对1服务</p>
+					<div class="phone"><input type="text" maxlength="11" placeholder="请填写联系方式" /></div>
+					<div class="submit"><input type="button" value="预约" /></div>
+				</div>
+				<div class="text">
+					<p>海量数据，专业服务</p>
+					<p>认真服务于您每一个用车要求</p>
+				</div>
+			</div>
+			<div class="car-box side-box">
+				<h6 class="title">猜你喜欢</h6>
+				<ul class="list">
+					<li>
+						<a href="" class="image"><img src="../future_images/car-3d18883c36.png" width="100%" /></a>
+						<a href="" class="name">三菱欧蓝德 2.0L</a>
+						<div class="parameter"><span class="date">2012年7月</span><i class="split">/</i><span class="mile">2.88万公里</span></div>
+						<div class="price"><i class="symbol">￥</i><strong class="num">11.60</strong><span class="unit">万</span><span class="area">北京</span></div>
+						<div class="original-price"><span>新车价：</span><i>35.5</i><span>万</span></div>
+					</li>
+				</ul>
+				<div class="pagination">
+					<i class="prev btn"></i>
+					<i class="next btn"></i>
+				</div>
+			</div>
+			<div class="question-box side-box">
+				<h6 class="title">答疑解惑 找专家</h6>
+				<ul class="list">
+					<li>
+						<a href="">你好，我有一辆奇瑞风云2三箱进取型车，2010款，2011年元月上牌，行驶6万公里。更换过前后保险杠（4S店），正常保养也在4S店。现在能卖多少钱？</a>
+						<p class="answered">已解答</p>
+					</li>
+					<li>
+						<a href="">你好，我有一辆奇瑞风云2三箱进取型车，2010款，2011年元月上牌，行驶6万公里。更换过前后保险杠（4S店），正常保养也在4S店。现在能卖多少钱？</a>
+						<p class="answered">已解答</p>
+					</li>
+					<li>
+						<a href="">你好，我有一辆奇瑞风云2三箱进取型车，2010款，2011年元月上牌，行驶6万公里。更换过前后保险杠（4S店），正常保养也在4S店。现在能卖多少钱？</a>
+						<p class="answered">已解答</p>
+					</li>
+				</ul>
+				<div class="ask"><a href="">我想提问</a></div>
+			</div>
+			<div class="news-box side-box">
+				<h6 class="title">购车攻略</h6>
+				<ul class="list">
+					<li><a href="">年轻时尚让人一眼爱上的20万左右的中型车推荐</a></li>
+					<li><a href="">年轻时尚让人一眼爱上的20万左右的中型车推荐</a></li>
+					<li><a href="">年轻时尚让人一眼爱上的20万左右的中型车推荐</a></li>
+					<li><a href="">年轻时尚让人一眼爱上的20万左右的中型车推荐</a></li>
+					<li><a href="">年轻时尚让人一眼爱上的20万左右的中型车推荐</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- buy car end -->
+
+	<!-- alpha layer start -->
+	<div id="alphaLayer" class="alpha" style="display: none"></div>
+	<!-- alpha layer start -->
+
+	<!-- reservation form start -->
+	<div class="bc-reservation-form" style="display: none">
+		<i class="close"></i>
+		<div class="header">
+			<h6 class="title">请选择您需要预约的服务</h6>
+			<ul class="nav clear">
+				<li class="active">买车</li>
+				<li>卖车</li>
+				<li>置换</li>
+			</ul>
+		</div>
+		<div class="form">
+			<div class="clear">
+				<div class="item phone">
+					<h6 class="title">联系方式<i class="label">*</i></h6>
+					<div class="input"><input type="text" placeholder="请填写电话号码" maxlength="11" /></div>
+				</div>
+				<div class="item name">
+					<h6 class="title">姓名</h6>
+					<div class="input"><input type="text" placeholder="请填写姓名" maxlength="7" /></div>
+				</div>
+			</div>
+			<div class="item location">
+				<h6 class="title">所在地<i class="label">*</i></h6>
+				<div class="select">
+					<h6 class="text unselected">请选择</h6>
+					<ul class="list"></ul>
+				</div>
+			</div>
+			<div class="item existing-model">
+				<h6 class="title">现有车型<i class="label">*</i></h6>
+				<div class="select">
+					<h6 class="text unselected">请选择</h6>
+					<ul class="list"></ul>
+				</div>
+			</div>
+			<div class="item interested-model">
+				<h6 class="title">意向车型<i class="label">*</i></h6>
+				<div class="select">
+					<h6 class="text unselected">请选择</h6>
+					<ul class="list"></ul>
+				</div>
+			</div>
+			<div class="clear">
+				<div class="item vehicle-age">
+					<h6 class="title">意向车龄</h6>
+					<div class="select">
+						<h6 class="text unselected">请选择</h6>
+						<ul class="list"></ul>
+					</div>
+				</div>
+				<div class="item budget">
+					<h6 class="title">预算</h6>
+					<div class="input"><input type="text" placeholder="请填写" maxlength="7" /><span class="unit">万元</span></div>
+				</div>
+			</div>
+			<div class="submit"><input type="button" value="提交" /></div>
+		</div>
+	</div>
+	<!-- reservation form end -->
+</body>
+</html>

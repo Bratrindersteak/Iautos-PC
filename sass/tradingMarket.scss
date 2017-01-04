@@ -1,0 +1,498 @@
+.trading-market {
+	@extend %iautos-width;
+
+	.select-box {
+		padding: 10px 15px;
+		border: 1px solid #e6e6e6;
+
+		.title {
+			width: 68px;
+			@extend %float-left;
+			@extend %font-normal;
+			@extend %font-twelve;
+			@extend %color999;
+		}
+
+		.lists {
+			width: 1060px;
+			#{$ie7_hack}width: 1058px;
+			font-size: 0;
+			@extend %float-left;
+			@extend %box-sizing;
+		}
+
+		.letter {
+			margin-right: 24px;
+			@extend %font-twelve;
+			@extend %colorb2b2b2;
+		}
+
+		a {
+			@extend %font-twelve;
+			@extend %color333;
+			@extend %hover-f39800;
+		}
+
+		.active {
+			@extend %colorf39800;
+		}
+	}
+
+	.provinces {
+		.title {
+			height: 32px;
+			line-height: 32px;
+		}
+
+		li {
+			display: inline;
+			height: 32px;
+			line-height: 32px;
+		}
+
+		.province {
+			margin-right: 24px;
+		}
+	}
+
+	.cities {
+		margin: 10px 0;
+
+		.title {
+			height: 36px;
+			line-height: 36px;
+		}
+
+		.lists {
+			border: 1px solid #e6e6e6;
+			@extend %bkgfafafa;
+		}
+
+		li {
+			height: 36px;
+			line-height: 36px;
+			@extend %float-left;
+		}
+
+		.city {
+			margin: 0 12px;
+		}
+	}
+
+	.hot-markets {
+		margin-top: 10px;
+
+		.title {
+			height: 26px;
+			line-height: 26px;
+		}
+
+		li {
+			height: 26px;
+			line-height: 26px;
+			margin: 0 20px 10px 0;
+			@extend %float-left;
+		}
+
+		.hot-market {
+			display: block;
+			padding: 0 15px;
+			border-radius: 13px;
+			@extend %bkgf0f0f0;
+		}
+	}
+
+	.market-box {
+		margin-top: 30px;
+
+		li {
+			width: 371px;
+			margin: 10px 10px 0;
+			border: 1px solid #f2f2f2;
+			@extend %float-left;
+			@extend %bkgfff;
+			@include boxShadow(0px 0px 20px #f2f2f2);
+		}
+
+		.image {
+			overflow: hidden;
+			height: 210px;
+			line-height: 210px;
+		}
+
+		.info {
+			padding: 15px 15px 19px;
+		}
+
+		.title {
+			a {
+				@extend %color333;
+				@extend %a-hover;
+			}
+		}
+
+		.address {
+			height: 34px;
+			line-height: 34px;
+			@extend %font-twelve;
+			@extend %color333;
+			@extend %single-row-ellipsis;
+		}
+
+		.intro {
+			display: block;
+			height: 110px;
+			line-height: 22px;
+			@extend %font-twelve;
+			@extend %color999;
+			@extend %hover-2b6cbc;
+			@include multiRowEllipsis(5);
+		}
+
+		.head {
+			line-height: 40px;
+
+			.title {
+				@extend %float-left;
+				@extend %font-normal;
+				@extend %font-twenty;
+			}
+
+			.more {
+				@extend %relative;
+				@extend %float-right;
+
+				a {
+					padding-right: 36px;
+					@extend %font-sixteen;
+					@extend %color333;
+					@extend %a-hover;
+				}
+
+				.icon {
+					top: 10px;
+					right: 9px;
+					width: 20px;
+					height: 20px;
+					background-position: -15px -315px;
+					@extend %absolute;
+					@extend %glb-icon;
+				}
+			}
+		}
+
+		.lists {
+			margin: 0 -10px;
+
+			.title {
+				line-height: 22px;
+				@extend %font-seventeen;
+			}
+		}
+	}
+
+	.city-box {
+		width: 1118px;
+		margin-top: 32px;
+		padding: 4px 20px 0;
+		border: 1px solid #f2f2f2;
+		border-top: 2px solid #f39c0a;
+		@include boxShadow(0px 0px 10px #f2f2f2);
+
+		.market-title {
+			height: 24px;
+			line-height: 24px;
+			margin: 30px 0;
+			padding-left: 10px;
+			border-left: 4px solid #fbbb02;
+			@extend %font-twenty-four;
+
+			a {
+				@extend %color333;
+				@extend %a-hover;
+			}
+		}
+
+		.market-intro {
+			margin-bottom: 20px;
+
+			.image {
+				overflow: hidden;
+				width: 28.623%;
+				height: 182px;
+				line-height: 182px;
+				@extend %float-left;
+
+				a {
+					display: block;
+					height: 100%;
+				}
+			}
+
+			.title {
+				height: 16px;
+				line-height: 16px;
+				margin: 21px 0 9px;
+				@extend %font-fourteen;
+				@extend %color333;
+
+				span {
+					padding-left: 23px;
+					background-position: -17px -365px;
+					@extend %glb-icon;
+				}
+			}
+
+			.info {
+				width: 27.46%;
+				padding: 0 20px;
+				@extend %float-left;
+			}
+
+			.address {
+				line-height: 24px;
+				padding-left: 25px;
+				background-position: -18px -414px;
+				@extend %font-fourteen;
+				@extend %color333;
+				@extend %glb-icon;
+			}
+
+			.contact {
+				margin-top: 4px;
+				padding-left: 25px;
+				line-height: 24px;
+				background-position: -17px -464px;
+				@extend %font-fourteen;
+				@extend %color333;
+				@extend %glb-icon;
+
+				span {
+					margin-right: 10px;
+				}
+			}
+
+			.intro {
+				width: 38.015%;
+				padding-left: 25px;
+				border-left: 1px solid #f0f0f0;
+				@extend %relative;
+				@extend %float-left;
+
+				p {
+					overflow: hidden;
+					height: 120px;
+					line-height: 30px;
+					@extend %font-fourteen;
+					@extend %color333;
+				}
+
+				.link {
+					bottom: 0;
+					right: 0;
+					height: 30px;
+					line-height: 30px;
+					padding-left: 3px;
+					@extend %absolute;
+					@extend %bkgfff;
+					@extend %font-fourteen;
+					@extend %color2b6cbc;
+					@extend %a-hover;
+				}
+
+				.ellipsis {
+					padding-right: 4px;
+					@extend %color333;
+				}
+			}
+		}
+
+		.title-box {
+			height: 59px;
+			line-height: 59px;
+			border-top: 1px solid #f0f0f0;
+			@extend %relative;
+
+			.name {
+				@extend %text-align;
+				@extend %font-normal;
+				@extend %font-sixteen;
+				@extend %color333;
+			}
+
+			.all {
+				top: 50%;
+				right: 12px;
+				height: 20px;
+				line-height: 20px;
+				margin-top: -10px;
+				padding-right: 27px;
+				background-position: 48px -315px;
+				@extend %absolute;
+				@extend %font-fourteen;
+				@extend %color333;
+				@extend %a-hover;
+				@extend %glb-icon;
+			}
+		}
+
+		.recommend-merchant {
+			.name {
+				span {
+					padding-left: 30px;
+					background-position: -14px -565px;
+					@extend %glb-icon;
+				}
+			}
+
+			.lists {
+				margin: 0 0 22px -1px;
+			}
+
+			li {
+				width: 24.911%;
+				border-left: 1px solid #f0f0f0;
+				@extend %float-left;
+				@extend %text-align;
+			}
+
+			li:first-child {
+				border-left: none;
+			}
+
+			.title {
+				height: 28px;
+				line-height: 28px;
+				@extend %font-normal;
+				@extend %font-sixteen;
+				@extend %color333;
+			}
+
+			.level {
+				margin-top: 8px;
+				font-size: 0;
+
+				img {
+					margin: 0 1px;
+				}
+			}
+
+			.sale-detail {
+				height: 42px;
+				line-height: 42px;
+				@extend %font-fourteen;
+				@extend %color666;
+			}
+
+			.split {
+				margin: 0 4px;
+			}
+
+			.enter {
+				width: 48.78%;
+				height: 36px;
+				line-height: 36px;
+				margin: 2px auto 0;
+				border: 1px solid #ccc;
+				@extend %radiu;
+				@include normalGradient(linear, top, #{#ffffff}, #f7f7f7);
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					@extend %font-fourteen;
+					@extend %color333;
+					@extend %a-hover;
+				}
+			}
+		}
+
+		.recommend-cars {
+			.name {
+				span {
+					padding-left: 26px;
+					background-position: -16px -615px;
+					@extend %glb-icon;
+				}
+			}
+
+			.lists {
+				margin: 0 -11px;
+			}
+
+			li {
+				width: 23.071%;
+				height: 284px;
+				margin: 0 10px 20px;
+				border: 1px solid #f0f0f0;
+				@extend %float-left;
+				@extend %radiu;
+
+				&:hover {
+					@include boxShadow(0px 0px 20px #f0f0f0);
+				}
+
+				a {
+					display: block;
+					height: 100%;
+				}
+
+				.image {
+					overflow: hidden;
+					width: 100%;
+					height: 197px;
+					line-height: 197px;
+				}
+
+				.title {
+					height: 44px;
+					line-height: 44px;
+					margin: 5px 10px 0;
+					@extend %font-normal;
+					@extend %font-fourteen;
+					@extend %color333;
+					@extend %single-row-ellipsis;
+				}
+
+				.info {
+					margin: 0 10px;
+				}
+
+				.price {
+					display: inline-block;
+					height: 16px;
+					line-height: 16px;
+					padding-right: 10px;
+					@extend %float-left;
+					@extend %font-fifteen;
+					@extend %colord70000;
+				}
+
+				strong {
+					padding-right: 2px;
+					vertical-align: -1px;
+					@extend %font-arial;
+					@extend %font-twenty-two;
+				}
+
+				.year {
+					@extend %float-right;
+					@extend %font-twelve;
+					@extend %color999;
+				}
+
+				.mile {
+					padding-left: 10px;
+					@extend %float-right;
+					@extend %font-twelve;
+					@extend %color999;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	margin-top: 10px;
+}

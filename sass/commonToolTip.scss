@@ -1,0 +1,342 @@
+.tooltip {
+	top: 50%;
+	left: 50%;
+	z-index: 11;
+	@extend %fixed;
+	@extend %bkgfff;
+
+	.close {
+		top: 0;
+		right: 0;
+		width: 12px;
+		height: 12px;
+		padding: 7px 17px;
+		background-position: -2px -212px;
+		@extend %absolute;
+		@extend %pointer;
+		@extend %glb-icon;
+
+		&:hover {
+			@include transition(0.6);
+			@include transform(360);
+		}
+	}
+
+	.info {
+		height: 48px;
+		line-height: 48px;
+		@extend %text-align;
+		@extend %font-normal;
+		@extend %font-twenty-eight;
+		@extend %colorf9a300;
+	}
+
+	.tip {
+		height: 36px;
+		line-height: 36px;
+		@extend %text-align;
+		@extend %font-sixteen;
+		@extend %color666;
+	}
+
+	.link {
+		width: 298px;
+		height: 38px;
+		line-height: 38px;
+		margin: 20px auto 0;
+		border: 1px solid #f29600;
+		@extend %text-align;
+		@extend %radiu;
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			@extend %font-sixteen;
+			@extend %colorfff;
+			@include normalGradient(linear, top, #ffb800, #f39900);
+		}
+	}
+}
+
+.personal-publish-success {
+	width: 768px;
+	height: 453px;
+	margin: -226px 0 0 -384px;
+
+	.image {
+		width: 170px;
+		height: 149px;
+		margin: 82px auto 20px;
+	}
+}
+
+.personal-publish-fail {
+	width: 768px;
+	height: 382px;
+	margin: -191px 0 0 -384px;
+
+	.image {
+		width: 167px;
+		height: 127px;
+		margin: 66px auto 20px;
+	}
+}
+
+.personal-publish-full {
+	width: 768px;
+	height: 453px;
+	margin: -226px 0 0 -384px;
+
+	.image {
+		width: 211px;
+		height: 140px;
+		margin: 77px auto 32px;
+	}
+}
+
+.personal-publish-error {
+	width: 350px;
+	height: 156px;
+	margin: -78px 0 0 -175px;
+
+	.tip {
+		width: 68%;
+		margin: 50px auto 0;
+
+		.tip-text {
+			padding-left: 20px;
+    		background-position: -16px -1062px;
+			@extend %glb-icon;
+		}
+	}
+}
+
+.register {
+	width: 978px;
+	height: 472px;
+	margin: -236px 0 0 -489px;
+	border: 1px solid #c1c1c1;
+
+	.register-box {
+		width: 806px;
+		height: 361px;
+		margin: 0 auto;
+		padding-top: 59px;
+		@extend %bkgfff;
+	}
+
+	.image {
+		width: 406px;
+		margin-top: 9px;
+		@extend %float-left;
+	}
+
+	.form {
+		width: 300px;
+		margin-left: 100px;
+		@extend %float-right;
+
+		li {
+			width: 50%;
+			height: 44px;
+			line-height: 44px;
+			border-bottom: 2px solid #ebebeb;
+			@extend %float-left;
+			@extend %text-align;
+			@extend %font-eighteen;
+			@extend %pointer;
+			@extend %a-hover;
+		}
+
+		.active {
+			border-bottom-color: #f9a300;
+			@extend %colorf29600;
+		}
+	}
+
+	.fast-register {
+		padding-top: 4px;
+	}
+
+	.password-register {
+		padding-top: 4px;
+	}
+
+	.input-text {
+		width: 100%;
+		height: 40px;
+		margin-top: 16px;
+
+		input {
+			width: 100%;
+			height: 100%;
+			#{$ie7_hack}width: 284px;
+			#{$ie7_hack}height: 38px;
+			line-height: 38px;
+			padding-left: 14px;
+			border: 1px solid #ddd;
+			@extend %font-fourteen;
+			@extend %color282828;
+			@extend %box-sizing;
+		}
+
+		.code {
+			width: 66.67%;
+			#{$ie7_hack}width: 184px;
+			@extend %float-left;
+		}
+
+		img {
+			@extend %float-right;
+			@extend %pointer;
+		}
+
+		span {
+			width: 33.33%;
+			height: 100%;
+			line-height: 40px;
+			#{$ie7_hack}height: 40px;
+			@extend %float-right;
+			@extend %text-align;
+			@extend %font-twelve;
+			@extend %colorfff;
+			@extend %box-sizing;
+			@extend %pointer;
+		}
+
+		.send {
+			#{$ie7_hack}width: 100px;
+			@extend %bkgf9a300;
+
+			&:hover {
+				@extend %bkgf78f00;
+			}
+		}
+
+		.resend {
+			#{$ie7_hack}width: 84px;
+			@extend %bkgddd;
+		}
+	}
+
+	.unclick {
+		@extend %relative;
+		
+		&:after {
+			content: '';
+			top: 0;
+			right: 0;
+			width: 90px;
+			height: 100%;
+			z-index: 1;
+			@extend %absolute;
+		}
+	}
+
+	.input-radio {
+		height: 34px;
+		line-height: 34px;
+		@extend %colorf9a300;
+
+		input {
+			width: 14px;
+			height: 14px;
+			margin: 0 10px 0 0;
+			vertical-align: -3px;
+			#{$ie7_hack}vertical-align: 2px;
+			@extend %pointer;
+		}
+
+		label {
+			@extend %font-twelve;
+			@extend %pointer;
+		}
+	}
+
+	.error-info {
+		height: 34px;
+		line-height: 34px;
+		padding-left: 20px;
+		background-position: -18px -508px;
+		@extend %font-twelve;
+		@extend %colorf20000;
+		@extend %glb-icon;
+	}
+
+	.disappear {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	.success {
+		background-position: -17px -1006px;
+		@extend %color40b053;
+	}
+
+	.input-submit {
+		width: 100%;
+		height: 40px;
+		margin-top: 16px;
+
+		input {
+			width: 100%;
+			height: 100%;
+			#{$ie7_hack}width: 298px;
+			#{$ie7_hack}height: 38px;
+			border: 1px solid #f29600;
+			@extend %text-align;
+			@extend %font-sixteen;
+			@extend %colorfff;
+			@extend %radiu;
+			@extend %box-sizing;
+			@extend %orange-button;
+		}
+	}
+
+	.unsubmit {
+		@extend %relative;
+		
+		&:after {
+			content: '';
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			@extend %absolute;
+		}
+	}
+
+	.link-box {
+		height: 51px;
+		line-height: 51px;
+		text-align: right;
+		border-top: 1px solid #ebebeb;
+		font-size: 0;
+		@extend %bkgf9f9f9;
+
+		.left {
+			@extend %font-sixteen;
+
+			a {
+				margin: 0 34px;
+				@extend %color969696;
+				@extend %a-hover;
+			}
+		}
+
+		.right {
+			border-left: 1px solid #c9c9c9;
+			@extend %font-sixteen;
+
+			a {
+				margin: 0 30px;
+				padding-left: 22px;
+				background-position: -20px -715px;
+				@extend %colorf9a300;
+				@extend %glb-icon;
+			}
+		}
+	}
+}

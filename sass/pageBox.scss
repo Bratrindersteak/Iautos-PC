@@ -1,0 +1,91 @@
+.pages-box {
+    height: 30px;
+    margin: 60px 0;
+    font-size: 0;
+    @extend %text-align;
+}
+
+.pages-box a {
+    display: inline-block;
+    height: 28px;
+    line-height: 29px;
+    margin: 0 3px 0 2px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    @extend %text-align;
+    @extend %color333;
+
+    &:hover {
+        border-color: #f29600;
+        @extend %colorf29600;
+    }
+}
+
+.pages-box .active {
+    border-color: #f29600;
+    @extend %bkgf29600;
+    @extend %colorfff;
+}
+
+.pages-box .change-page {
+    width: 71px;
+    @extend %font-fourteen;
+}
+
+.pages-box .disabled {
+    cursor: default;
+    @extend %colorccc;
+}
+
+.pages-box .disabled:hover {
+    border-color: #e6e6e6;
+    @extend %bkgfff;
+    @extend %colorccc;
+}
+
+.pages-box .page-num {
+    padding: 0 10px;
+    font-family: Arial;
+    @extend %font-sixteen;
+}
+
+.pages-box .text {
+    margin: 0 5px;
+    vertical-align: 1px;
+    @extend %font-twelve;
+    @extend %color999;
+}
+
+.pages-box .point i {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 0 2px 4px;
+    @extend %bkg999;
+}
+
+.pages-box input {
+    height: 22px;
+    @extend %text-align;
+    @extend %font-twelve;
+}
+
+.pages-box input[type=text] {
+    width: 34px;
+    border: 1px solid #ededed;
+    font-family: Arial;
+    vertical-align: 2px;
+    @extend %color333;
+}
+
+.pages-box input[type=button] {
+    width: 44px;
+    border: 1px solid #ededed;
+    vertical-align: 1px;
+    @extend %bkgfff;
+    @extend %color333;
+
+    &:hover {
+        @extend %colorf29600;
+    }
+}

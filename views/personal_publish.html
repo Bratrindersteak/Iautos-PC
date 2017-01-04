@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>主站PC个人发车页面</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="../dist/styles/iautos-pc.css" />
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../dist/scripts/header-9598c51a13.js"></script>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r]||function() {
+					(i[r].q=i[r].q||[]).push(arguments)
+				},i[r].l = 1 * new Date();
+				a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-15007416-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!--[if lte IE 6]>
+			<style type="text/css">
+				body{behavior:url("./js/csshover.htc");}
+			</style>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		    <style type="text/css">
+		    	.left-select {
+		        	background:transparent;
+		        	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+		        	zoom: 1;
+		    	}
+		    </style>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- common header start -->
+		<div id="commonHeader" class="common-header">
+			<div class="top-nav-wrapper">
+				<div class="top-nav clear">
+					<div class="personal-publish"><a href="/sell/fast_sendcar/">个人快速发车</a></div>
+					<div id="merchantRegister" class="merchant-register">
+						<h6 class="item"><span>我是商户</span></h6>
+						<ul class="list" style="display: none">
+							<li class="link">
+								<a href="">登录</a>
+							</li>
+							<li class="link">
+								<a href="">免费注册</a>
+							</li>
+						</ul>
+					</div>
+					<div id="personalRegister" class="personal-register">
+						<h6 class="item"><span>个人登录</span></h6>
+						<ul class="list" style="display: none">
+							<li class="link">
+								<a href="">登录</a>
+							</li>
+							<li class="link">
+								<a href="">免费注册</a>
+							</li>
+						</ul>
+					</div>
+					<div id="clientDownload" class="client-download">
+						<h6 class="item"><span>客户端下载</span></h6>
+						<ul class="box clear" style="display: none">
+							<li>
+								<div class="image"><img src="/static2013/images/iautos-app-download.png" width="100%" /></div>
+								<h6 class="name">扫码下载</h6>
+								<p class="text">第一车网APP</p>
+							</li>
+							<li style="margin-left: 1px">
+								<div class="image"><img src="/static2013/images/haoche.jpg" width="100%" /></div>
+								<h6 class="name">了解更多</h6>
+								<p class="text">关注微信公众号</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-main-wrap">
+				<div class="header-main">
+					<div class="header-search clear">
+						<div class="head-logo"><a href="http://www.iautos.cn/"><img src="../images/logo.jpg" widht="150" height="40" alt=""></a></div>
+						<div class="head-area">
+							<div class="area-select"><span class="area-name">北京</span><i class="glb-area"></i></div>
+							<div class="area-option" id="areaOption" style="display: none;">
+								<span class="joint"></span>
+								<span class="glb-close" id="areaOptionClose"></span>
+								<div class="province-letter">
+									<h5 class="t">省份首字母</h5>
+									<ul class="letters">
+										<li class="active"><span class="l">A</span></li>
+										<li><span class="l">B</span></li>
+										<li><span class="l">C</span></li>
+										<li><span class="l">f</span></li>
+										<li><span class="l">G</span></li>
+										<li><span class="l">H</span></li>
+										<li><span class="l">A</span></li>
+										<li><span class="l">A</span></li>
+										<li><span class="l">A</span></li>
+										<li><span class="l">A</span></li>
+									</ul>
+								</div>
+								<div class="citys">
+									<div class="hot-city">
+										<h5 class="t">热门城市</h5>
+										<ul class="city">
+											<li><a class="c" href="">全国</a></li>
+											<li><a class="c" href="">内蒙古</span></a></li>
+											<li><a class="c" href="">全国</span></a></li>
+											<li><a class="c" href="">全国</a></li>
+											<li><a class="c" href="">内蒙古</span></a></li>
+											<li><a class="c" href="">全国</span></a></li>
+											<li><a class="c" href="">全国</a></li>
+											<li><a class="c" href="">内蒙古</span></a></li>
+											<li><a class="c" href="">全国</span></a></li>
+										</ul>
+									</div>
+									<div class="all-city">
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">安徽</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+										<div class="all-city-list">
+											<div class="t"><span class="u">A</span><span class="d">黑龙江</span></div>
+											<ul class="city">
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">乌鲁木齐</a></li>
+												<li><a class="c" href="">齐齐哈尔</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+												<li><a class="c" href="">全国</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="head-search">
+							<form>
+								<div class="suchen">
+									<input class="search" id="searchInput" type="text" placeholder="搜索你喜欢的车型，如宝马" />
+									<input class="submit" id="searchBtn" type="submit" value="" />
+								</div>
+							</form>
+							<ul class="search-popup" id="searchTip" style="display: none;">
+								<li><span class="r">宝马</span></li>
+								<li><span class="r">宝马</span></li>
+								<li><span class="r">宝马</span></li>
+								<li><span class="r">宝马</span></li>
+								<li><span class="r">宝马</span></li>
+								<li><span class="r">宝马</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-nav">
+						<ul class="head-nav clear">
+							<li class="active"><a href=""><span class="n">首页</span></a></li>
+							<li><a href=""><span class="n">买车</span></a></li>
+							<li><a href=""><span class="n">卖车</span></a></li>
+							<li><a href=""><span class="n">评估</span></a></li>
+							<li><a href=""><span class="n">问答</span></a></li>
+							<li><a href=""><span class="n">新闻</span></a></li>
+							<li><a href=""><span class="n">车型</span></a></li>
+							<li class="active"><a href=""><span class="n">99好车</span><i class="glb-jiu"></i></a></li>
+						</ul>
+						<div class="head-tel"><span class="glb-tel">400-666-1612</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- common header end -->
+
+		<!-- personal publish banner start -->
+		<div class="personal-publish-banner">
+			<div class="image"><img src="../dist/images/personal-publish-banner-5fd72be8d3.jpg" height="100%"></div>
+		</div>
+		<!-- personal publish banner end -->
+
+		<div class="personal-publish-form">
+			<h5 class="title"><span class="front">填写个人车源信息，</span><span class="latter">一键轻松发车</span></h5>
+			<div class="item-wrapper clear">
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">车辆所在地</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请选择车辆所在地</span></div>
+					</div>
+					<div class="item-box a-half" style="z-index: 2">
+						<div>
+							<input type="text" class="select-text" value="" maxlength="14" readonly="readonly" placeholder="请选择" />
+							<span class="select-btn"></span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">品牌车系</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请选择品牌车系</span></div>
+					</div>
+					<div class="item-box a-half" style="z-index: 2">
+						<div>
+							<input type="text" class="select-text" value="" maxlength="4" readonly="readonly" placeholder="请选择" />
+							<span class="select-btn"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-wrapper clear">
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">首次上牌时间</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请选择上牌时间</span></div>
+					</div>
+					<div class="item-box one-third" style="z-index: 1">
+						<div>
+							<input type="text" id="pbFirstBrandYear" class="select-text" value="" maxlength="14" readonly="readonly" placeholder="请选择" />
+							<span class="select-btn"></span>
+						</div>
+						<ul class="select-lists" style="display: none;">
+							<li><span class="year">2016</span></li>
+							<li><span class="year">2015</span></li>
+							<li><span class="year">2014</span></li>
+							<li><span class="year">2013</span></li>
+							<li><span class="year">2012</span></li>
+							<li><span class="year">2011</span></li>
+						</ul>
+					</div>
+					<div class="no-brand"><input type="checkbox" id="noCarBrand"><label for="noCarBrand">车辆未上牌</label></div>
+				</div>
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">行驶里程</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请填写行驶里程</span></div>
+					</div>
+					<div class="item-box one-third">
+						<input type="text" class="mile-input" value="" maxlength="4" placeholder="输入里程数" />
+						<span class="unit">万公里</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">期望价格</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请填写期望价格</span></div>
+					</div>
+					<div class="item-box one-third">
+						<input type="text" class="price-input" value="" maxlength="4" placeholder="输入期望价格" />
+						<span class="unit">万元</span>
+					</div>
+				</div>
+			</div>
+			<div class="car-colors">
+				<div class="item-title clear">
+					<h6 class="name">车身颜色</h6>
+					<div class="error" style="display: none"><i class="icon"></i><span class="text">请选择车身颜色</span></div>
+				</div>
+				<ul class="lists clear">
+					<li class="active"><i class="color black"></i><span class="name">黑色</span></li>
+					<li><i class="color grey"></i><span class="name">灰色</span></li>
+					<li><i class="color silver"></i><span class="name">银色</span></li>
+					<li><i class="color white"></i><span class="name">白色</span></li>
+					<li><i class="color red"></i><span class="name">红色</span></li>
+					<li><i class="color orange"></i><span class="name">橙色</span></li>
+					<li><i class="color yellow"></i><span class="name">黄色</span></li>
+					<li><i class="color green"></i><span class="name">绿色</span></li>
+					<li><i class="color blue"></i><span class="name">蓝色</span></li>
+					<li><i class="color brown"></i><span class="name">棕色</span></li>
+					<li><i class="color gold"></i><span class="name">金色</span></li>
+					<li><i class="color purple"></i><span class="name">紫色</span></li>
+					<li><i class="color others"></i><span class="name">其它</span></li>
+				</ul>
+			</div>
+			<div class="car-pictures">
+				<div class="item-title clear">
+					<h6 class="name">车辆照片</h6>
+					<div class="error" style="display: none"><i class="icon"></i><span class="text">请选择车辆照片</span></div>
+				</div>
+				<div class="clear">
+					<div class="uploading-btn"><input type="button" value="点击上传车辆实拍照片" /></div>
+					<p class="tip">图片比例为4:3，支持jpg/gif/png格式，每张最大8M，请最少上传2张。遵循下图从各个角度拍摄照片可以使咨询量提升80%哦！</p>
+				</div>
+				<ul class="lists clear">
+					<li class="real"><i class="close"></i><span class="status cover moving"><i>封面</i></span><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li class="real"><i class="close"></i><span class="status setting-cover moving"><i>设为封面</i></span><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+					<li><div class="image"><img src="" width="100%" /></div><h6 class="img-name">· 左前</h6></li>
+				</ul>
+			</div>
+			<div class="owner-description">
+				<div class="item-title clear">
+					<h6 class="name">车主附言</h6>
+				</div>
+				<textarea maxlength="300" placeholder="填写车况描述，提高资料完善度，让购车人更容易搜到你！"></textarea>
+				<div class="info clear">
+					<p class="tip">*请填写10~300之间的车况描述，其他无关信息会影响车辆通过审核</p>
+					<div class="count"><span class="current"><i>200</i>/</span><span class="total">300</span></div>
+				</div>
+			</div>
+			<div class="item-wrapper clear">
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">联系电话</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请填写联系电话</span></div>
+					</div>
+					<div class="item-box a-half">
+						<input type="text" class="phone-input" value="" maxlength="14" placeholder="请输入手机号码" />
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-title clear">
+						<h6 class="name">验证码</h6>
+						<div class="error" style="display: none"><i class="icon"></i><span class="text">请填写验证码</span></div>
+					</div>
+					<div class="item-box a-half">
+						<input type="text" class="verification-code-input" value="" maxlength="4" placeholder="请输入验证码" />
+						<input type="button" id="sendVerificationCode" class="verification-code-btn send" value="发送验证码" />
+						<input type="button" id="resendVerificationCode" class="verification-code-btn resend" value="重发（59）" style="display:none" />
+					</div>
+				</div>
+			</div>
+			<div class="submit"><input type="submit" value="提交" /></div>
+		</div>
+
+		<div class="phone-uploading">
+			<span class="tip">扫我<i class="angle"></i></span>
+			<i class="point"></i><i class="line"></i>
+			<div class="white">
+				<div class="image"><img src="" width="100%" /></div>
+				<h6 class="title">扫一扫</h6>
+				<h6 class="name">手机传图</h6>
+			</div>
+			<i class="home"></i>
+			<i class="shadow"><i class="shadow-left-line"></i><i class="shadow-right-line"></i><i class="shadow-white"></i></i>
+		</div>
+
+		<!-- footer -->
+		<div id="footer" class="footer">
+			<div class="foot-main clear">
+				<ul class="foot-nav">
+					<li class="title">第一车网</li>
+					<li><a href="#">关于第一车网</a></li>
+					<li><a href="#">加入我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">问题反馈</a></li>
+					<li><a href="#">客户端下载</a></li>
+				</ul>
+				<ul class="foot-nav">
+					<li class="title">合作机构</li>
+					<li><a href="#">中国汽车技术研究中心</a></li>
+					<li><a href="#">中国汽车流通协会</a></li>
+					<li><a href="#">贸促会汽车行业委员会</a></li>
+					<li><a href="#">中国宽带产业基金（CBC）</a></li>
+				</ul>
+				<div class="foot-code clear">
+					<div class="code">
+						<img src="../images/iautos.jpg" width="120" height="120" alt="">
+						<p>第一车网</p>
+					</div>
+					<div class="code">
+						<img src="../images/haoche.jpg" width="120" height="120" alt="">
+						<p>99好车</p>
+					</div>
+				</div>
+				<div class="tel">
+					<div class="tel-ico">
+						咨询电话
+					</div>
+					<span class="tel-num">400-666-1612</span>
+				</div>
+			</div>
+			<div class="foot-icp">
+				<p>经营许可证号110108007756969   京ICP备12005388号-1 京公网安备11010102000493号</p>
+				<p>Copyright © 2004 - 2016 www.iautos.cn All Rights Reserved</p>
+				<div class="credential">
+					<a href="https://ss.knet.cn/verifyseal.dll?sn=e13072411010041745dlkv000000&comefrom=trust" target="_blank""><img src="../images/credible-icon.png" width="100%" /></a>
+					<a href="https://credit.szfw.org/CX20150522010052010177.html" target="_blank"><img src="../images/honest-icon.png" width="100%" /></a>
+				</div>
+			</div>
+		</div>
+		<!-- footer end -->
+
+		<div id="alphaLayer" class="alpha" style="display: none"></div>
+
+		<!-- tooltip start -->
+		<div class="tooltip personal-publish-success" style="display: none">
+			<i class="close"></i>
+			<div class="image"><img src="../dist/images/personal-publish-success-f00572b7c7.png" width="100%" /></div>
+			<h6 class="info">恭喜！发布成功，请留意审核信息</h6>
+			<p class="tip">您可以用手机号<span>185****2713</span>登录</p>
+			<div class="link"><a href="">查看和管理车源</a></div>
+		</div>
+		<div class="tooltip personal-publish-fail" style="display: none">
+			<i class="close"></i>
+			<div class="image"><img src="../dist/images/personal-publish-fail-02b6b64133.png" width="100%" /></div>
+			<h6 class="info">你已经是第一车网商户</h6>
+			<div class="link"><a href="">登录发车</a></div>
+		</div>
+		<div class="tooltip personal-publish-full" style="display: none">
+			<i class="close"></i>
+			<div class="image"><img src="../dist/images/personal-publish-full-61533afda8.png" width="100%" /></div>
+			<h6 class="info">抱歉您的库存已满，暂时不能发车</h6>
+			<p class="tip">需等待车辆售出或者去个人中心管理库存</p>
+			<div class="link"><a href="">去个人管理中心管理库存</a></div>
+		</div>
+		<div class="tooltip register" style="display: none">
+			<i class="close"></i>
+			<div class="register-box clear">
+				<div class="image"><img src="../dist/images/growth-ring-fc3b5387ef.png" width="100%" /></div>
+				<div class="form">
+					<ul class="tab clear">
+						<li><span>快捷登录</span></li>
+						<li class="active"><span>密码登录</span></li>
+					</ul>
+					<div class="fast-register">
+						<div class="input-text"><input type="text" value="" placeholder="用户名" maxlength="15" /></div>
+						<div class="input-text"><input type="text" value="" placeholder="密码" maxlength="15" /></div>
+						<div class="input-text clear">
+						<input class="code" type="text" value="" placeholder="请输入图片码" maxlength="4" />
+						<img src="" width="90" height="40" />
+						</div>
+						<div class="input-radio"><input id="automaticLogin" type="checkbox" value="" /><label for ="automaticLogin">自动登录</label></div>
+						<div class="input-submit"><input type="button" value="登录" /></div>
+						<p class="error-info disappear">抱歉账号不存在</p>
+					</div>
+					<div class="password-register" style="display: none">
+						<div class="input-text"><input type="text" value="" placeholder="请输入手机号码" maxlength="11" /></div>
+						<div class="input-text clear">
+						<input class="code" type="text" value="" placeholder="验证码" maxlength="4" />
+						<span class="send">获取动态码</span>
+						<span class="resend" style="display: none">59秒后重发</span>
+						</div>
+						<p class="error-info disappear">动态码错误，请重新获取</p>
+						<div class="input-submit"><input type="button" value="登录" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="link-box">
+				<span class="left"><a href="">忘记密码</a></span>
+				<span class="left" style="display: none"><a href="">我是商户</a></span>
+				<span class="right"><a href="">去注册</a></span>
+			</div>
+		</div>
+		<!-- tooltip end -->
+
+		<script type="text/javascript">
+			var window_height = window.screen.availHeight;
+            var document_height = document.body.offsetHeight;
+            var body = document.getElementsByTagName('body')[0];
+            var footer = document.getElementById('footer');
+            var alpha_layer = document.getElementById('alphaLayer');
+            var no_car_brand = document.getElementById('noCarBrand');
+            var first_brand_year = document.getElementById('pbFirstBrandYear');
+            var send_verification_code = document.getElementById('sendVerificationCode');
+            var resend_verification_code = document.getElementById('resendVerificationCode');
+            var count;
+
+            send_verification_code.onclick = function () {
+            	var that = this;
+
+            	count = 58;
+            	that.style.display = 'none';
+            	resend_verification_code.style.display = 'inline';
+
+            	var timer = setInterval(function () {
+	            	if ( count === 0 || count === '0' ) {
+	            		clearInterval(timer);
+	            		that.style.display = 'inline';
+            			resend_verification_code.style.display = 'none';
+            			resend_verification_code.value = '重发（59）';
+            			return false;
+	            	}
+
+	            	if ( count < 10 ) {
+	            		count = '0' + count;
+	            	}
+
+	            	resend_verification_code.value = '重发（' + count + '）';
+	            	count -= 1;
+	            }, 1000);
+            };
+
+            no_car_brand.onclick = function () {
+            	if ( this.checked ) {
+            		addClass(this.parentNode, 'selected');
+            		addClass(first_brand_year.parentNode, 'disabled');
+            	} else {
+            		removeClass(this.parentNode, 'selected');
+            		removeClass(first_brand_year.parentNode, 'disabled');
+            	}
+            };
+
+            alpha_layer.style.height = document_height + 'px';
+
+            if ( document_height < window_height ) {
+                body.style.height = window_height + 'px';
+
+                if ( footer ) {
+                    footer.style.position = 'absolute';
+                    footer.style.bottom = 0 + 'px';
+                    footer.style.width = '100%';
+                }
+            }
+
+            function addClass (obj, cls) {
+				var obj_class = obj.className;
+				var blank = (obj_class != '') ? ' ' : '';
+				var added = obj_class + blank + cls;
+				obj.className = added;
+			}
+
+			function removeClass (obj, cls) {
+				var obj_class = ' ' + obj.className + ' ';
+				obj_class = obj_class.replace(/(\s+)/gi, ' ');
+				var removed = obj_class.replace(' '+cls+' ', ' ');
+				removed = removed.replace(/(^\s+)|(\s+$)/g, '');
+				obj.className = removed;
+			}
+
+			function hasClass (obj, cls) {
+				var obj_class = obj.className;
+				var obj_class_lst = obj_class.split(/\s+/);
+				var x = 0;
+				for ( x in obj_class_lst ) {
+					if ( obj_class_lst[x] === cls ) {
+						return true;
+					}
+				}
+				return false;
+			}
+
+			function del_ff (elem) {
+				var i;
+				var elem_child = elem.childNodes;
+				for ( i = 0; i < elem_child.length; i += 1 ) {
+					if ( elem_child[i].nodeName == "#text" && !/\s/.test(elem_child.nodeValue) ) {
+						elem.removeChild(elem_child);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
